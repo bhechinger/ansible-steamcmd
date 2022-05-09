@@ -76,7 +76,7 @@
 
 # Must use shell here because Valve expect an interactive stdin
 - name: Run steamcmd
-  shell: steamcmd +quit
+  shell: /usr/games/steamcmd +quit
   when: steamcmd_run_steamcmd == true
   args:
     chdir: "{{ steamcmd_user_homedir }}/steamcmd/"
